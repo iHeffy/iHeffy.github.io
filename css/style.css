@@ -32,6 +32,12 @@ h2 {
     margin-left: 2rem;
 }
 
+h3 {
+    color: #4A2C2A;
+    margin-bottom: 0.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 img {
     margin: 0 auto;
     display: block;
@@ -89,8 +95,9 @@ a:hover {
 }
 
 .resume-section h4 {
-    color: #5b813c;
+    color: #182a00;
     margin-bottom: 0.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .resume-section ul {
@@ -99,6 +106,33 @@ a:hover {
 
 .resume-section li {
     margin-bottom: 0.25rem;
+}
+
+/* projects page specific styling */
+.project-card {
+    background-color: #a0d0a3;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    color: #182a00;
+    margin-bottom: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.project-card p {
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
 }
 
 /* navigation menu styling */
