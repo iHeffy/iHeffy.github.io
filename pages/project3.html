@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset = "utf-8"/>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1"/>
+
+        <link rel="stylesheet" href="/css/foundation.css">
+        <link rel="stylesheet" href = "/css/style.css"/>
+
+        <title>Project 3</title>
+</head>
+
+	<body> 
+        <div class="off-canvas-wrapper">
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+                <button class="close-button" aria-label="Close menu" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <ul class="vertical menu select-page-font">
+                    <li><a href="/index.html">Home Page</a></li>
+                    <li><a href="/pages/project1.html">Project 1</a></li>
+                    <li><a href="/pages/project2.html">Project 2</a></li>
+                    <li><a href="/pages/project3.html">Project 3</a></li>
+                    <li><a href="/pages/resume.html">Resume</a></li>
+                    <li><a href="/pages/essay.html">Essay</a></li>
+                </ul>
+
+            </div>
+
+            <div class="grid-x grid-padding-x">
+                <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Navigation</button>
+            </div>
+
+            <div class="off-canvas-content" data-off-canvas-content>
+                
+                <div class="grid-container">   
+                    <div class="grid-x grid-padding-x">
+                        
+                        <div class="cell small-12 large-12" style="background-color: #bdccff;">
+                            <div class="grid-y" style="height: 100%;">
+                                 <div class="assignment-container">
+                                    <h1>Non-CS Assignment</h1>
+
+                                    <p>
+                                        This page showcases an assignment from outside of computer science. The
+                                        work demonstrates transferable skills such as research, writing, and
+                                        critical thinking, and connects to my capstone project by highlighting
+                                        interdisciplinary perspectives.
+                                     </p>
+
+                                    <!-- PDF Viewer -->
+                                    <div class="pdf-viewer" aria-labelledby="pdf-heading">
+                                        <h2 id="pdf-heading">Assignment Document</h2>
+                                            <iframe
+                                            src="assignment.pdf"
+                                            title="Non CS Assignment PDF showing research and analysis"
+                                            role="document"
+                                            aria-describedby="pdf-desc">
+                                            Your browser does not support inline PDFs. Use the link below to download the file.
+                                             </iframe>
+                                        <p id="pdf-desc">
+                                            Embedded PDF of the non-CS assignment. Use the download link if embedding is not supported.
+                                        </p>
+                                        <p>
+                                            <a href="assignment.pdf" download="non-cs-assignment.pdf" rel="noopener noreferrer">
+                                                Download Assignment (PDF)
+                                        </a>
+                                        </p>
+                                    </div>
+
+                             <!-- Reflection Section -->
+    
+                                    <p>
+                                        This assignment helped me strengthen my ability to analyze complex issues and communicate ideas clearly. These skills directly support my capstone project, where clarity and interdisciplinary thinking are essential.
+                                    </p>
+      
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cell small-12 large-12">
+                            <div class="grid-y" style="height: 100%;">
+                                
+                            
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/what-input.js"></script>
+    <script src="/js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+
+    </body>
+
+</html>

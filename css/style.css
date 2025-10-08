@@ -1,3 +1,254 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+P {
+    line-height: 2em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(253, 254, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full {
+    width: 50%;
+    max-width: 1000px;
+    min-height: 100px;
+    background-color: rgb(245, 239, 231);
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+.left {
+    position: initial;
+    background-color: rgb(126, 219, 231);
+    padding: 20px;
+
+}
+
+.right {
+    position: initial;
+    background-color: rgb(162, 202, 206);
+    padding: 20px;
+
+}
+
+.image, .Contact, .Skills, .Qualifications, .Certifications, .title, 
+.Summary, .Project, .Education, .Project .Essay{
+    margin-bottom: 30px;
+}
+
+.h2 {
+    background-color: rgb(4, 96, 150);
+}
+
+html {
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+hr.solid {
+    border-top: 3px solid rgb(0, 0, 0);
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 40px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.description {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.code-section {
+	display: flex;
+	gap: 40px;
+	margin-bottom: 40px;
+}
+
+pre {
+	background-color: #eee;
+	padding: 15px;
+	border-radius: 5px;
+	overflow-x: auto;
+	width: 50%;
+}
+
+.code-explanation {
+	width: 50%;
+}
+
+.video-section {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.image-gallery {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-bottom: 40px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+.assignment-container {
+    max-width: 800px;
+    margin: auto;
+}
+    
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.pdf-viewer {
+    margin: 20px 0;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ccc;
+}
+
+.reflection {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #007acc;
+    margin-top: 20px;
+}
+
+button {
+    background: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #005f99;
+}
+    
+ /* hidden class for accessibility toggle */
+.hidden {
+    display: none;
+}
+
+/* project Showcase Layout */
+.project-showcase {
+    background-color: #a0d0a3;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+}
+
+.project-description {
+    padding: 1rem;
+}
+
+.project-image-section {
+    padding: 1rem;
+}
+
+.project-demo {
+    padding: 1rem;
+}
+
+.project-details {
+    padding: 1rem;
+}
+
+.project-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.project-video {
+    width: 100%;
+    height: 300px;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.project-showcase h3 {
+    color: #182a00;
+    margin-bottom: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.project-showcase h4 {
+    color: #182a00;
+    margin-bottom: 0.75rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.25rem;
+}
+
+.project-showcase p {
+    margin-bottom: 0.75rem;
+    color: #182a00;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.project-showcase ul {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+}
+
+.project-showcase li {
+    margin-bottom: 0.25rem;
+    color: #182a00;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+
+
+/*
 html {
     font-size: 120%
 }
@@ -64,7 +315,7 @@ a:hover {
     background-color: rgb(20, 124, 124);
 }
 
-/* index page specific styling */
+
 .index-image-padding {
     padding: 1rem;
     border-radius: 3em;
@@ -83,7 +334,7 @@ a:hover {
     margin-top: auto;
 }
 
-/* resume page specific styling */
+
 .resume-container {
     margin-right: 2rem;
     margin-left: 2rem;
@@ -113,7 +364,7 @@ a:hover {
     margin-bottom: 0.25rem;
 }
 
-/* projects page specific styling */
+
 .project-card {
     background-color: #a0d0a3;
     margin-bottom: 2rem;
@@ -138,7 +389,7 @@ a:hover {
     margin-bottom: 0.75rem;
 }
 
-/* fun page gallery styling */
+
 .gallery-row {
     margin-bottom: 2rem;
 }
@@ -167,12 +418,11 @@ a:hover {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* navigation menu styling */
+
 .select-page-font li{
     margin-top: 1.75rem;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
-
+*/

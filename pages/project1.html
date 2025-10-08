@@ -6,8 +6,8 @@
 
         <link rel="stylesheet" href="/css/foundation.css">
         <link rel="stylesheet" href = "/css/style.css"/>
-        
-        <title>Resume</title>
+
+        <title>Project 1</title>
 </head>
 
 	<body> 
@@ -33,31 +33,42 @@
                 <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Navigation</button>
             </div>
 
+            <!-- page content lives here -->
             <div class="off-canvas-content" data-off-canvas-content>
-                
-                <div class="grid-container">   
-                    <div class="grid-x grid-padding-x">
-                        
-                        <div class="cell small-12 large-4" style="background-color: #bdccff;">
-                            <div class="grid-y" style="height: 100%;">
-                                
-      
-                            
+                <div class="grid-container">
+                    <div class="project-showcase">
+                        <!-- top row: description (left) and image (right) -->
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-12 medium-6 project-description">
+                                <h3>Project Title</h3>
+                                <p><strong>Purpose:</strong> place holder</p>
+                                <p><strong>My Work:</strong> 
+                                    place holder.
+                                </p>
+                                <p><strong>Technologies:</strong> insert technologies</p>
+                            </div>
+                            <div class="cell small-12 medium-6 project-image-section">
+                                <img src="/images/donaldduck.png" alt="Golf Card Game Code Screenshot" class="project-image">
                             </div>
                         </div>
 
-                        <div class="cell small-12 large-12">
-                            <div class="grid-y" style="height: 100%;">
-                                
-                            
+                        <!-- bottom row: demo (left) and Details (right) -->
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-12 medium-6 project-demo">
+                                <h4>Project Demo</h4>
+                                <video src="" alt="Golf Card Game Demo" class="project-video" controls>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="cell small-12 medium-6 project-details">
+                                <h4>Project Details</h4>
+                    
                             </div>
                         </div>
                     </div>
-                
                 </div>
             </div>
         </div>
-
     <!-- include before closing <body> tag -->
     <script src="/js/vendor/jquery.js"></script>
     <script src="/js/vendor/what-input.js"></script>
