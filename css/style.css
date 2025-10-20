@@ -51,7 +51,8 @@ li {
 }
 
 .profile-image {
-    max-width: 150px;
+    width: 100%;
+    height: auto;
     border-radius: 0.5rem;
 }
 
@@ -310,8 +311,10 @@ CSS styling for project showcase
 
 .project-video {
     width: 100%;
-    height: auto;
+    height: 600px;
     display: block;
+    border: 2px solid #9370db;
+    border-radius: 0.5rem;
 }
 
 /* technical details */

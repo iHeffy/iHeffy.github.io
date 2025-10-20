@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="../css/style.css"/>
 
         <!-- page title displayed in browser tab -->
-        <title>Project 2</title>
+        <title>RADB Python Integration</title>
 </head>
 
 <body> 
@@ -58,12 +58,16 @@
                                     <div class="grid-x grid-padding-x">
                                         <!-- left side - project title and description -->
                                         <div class="cell small-12 medium-8">
-                                            <h1 class="project-title">Project 2</h1>
-                                            <p class="project-description">Brief description of what this project accomplishes</p>
+                                            <h1 class="project-title">RADB into EdStem</h1>
+                                            <p class="project-description"> This past Summer I got to work with Dr. Hoefer as a Database intern
+                                                to work on a project to integrate a Relational Algebra interpreter into the EdStem course. This 
+                                                would effectively automate the first three assignments cover RADB as well as allowing for students to
+                                                check their work on assignments in hopes to improve the learning of the material.
+                                            </p>
                                         </div>
                                         <!-- right side - project screenshot/image -->
                                         <div class="cell small-12 medium-4">
-                                            <img src="../images/donaldduck.png" alt="Project Screenshot" class="project-image">
+                                            <img src="../images/edRADB.png" alt="Project Screenshot" class="project-image">
                                         </div>
                                     </div>
                                 </div>
@@ -71,18 +75,19 @@
                                 <!-- project overview section -->
                                 <div class="cell project-section">
                                     <h3>Project Overview</h3>
-                                    <p><strong>Purpose:</strong> Describe the main goal and purpose of this project.</p>
-                                    <p><strong>Challenge:</strong> Explain the problem this project solves or the challenge it addresses.</p>
-                                    <p><strong>Solution:</strong> Describe your approach and how you solved the problem.</p>
+                                    <p><strong>Purpose:</strong> To enhance the Database I course curriculum by integrating a relational algebra Python interpreter into the EdStem learning platform, 
+                                        as the previous relation algebra assignments were to be completed on paper and hand graded.
+                                    </p>
+                                    <p><strong>My Work:</strong> Integrated a Python-based relational algebra interpreter into an EdStem coursethat allows students to practice and visualize database via relational algebra operators. 
+                                        This tool helps future Database I students better understand relational algebra concepts and their connection to SQL queries, and allows real time feedback on their answers.
+                                    </p>
                                 </div>
                                 
                                 <!-- project demo section -->
                                 <div class="cell project-section">
                                     <h3>Project Demo</h3>
                                     <div class="media-container">
-                                        <video src="../images/gcg-example.mov" alt="Project Demo" class="project-video" controls>
-                                            Your browser does not support the video tag.
-                                        </video>
+                                        <img src="../images/demo-radb.png" alt="Project Demo" class="project-video" controls></img>
                                     </div>
                                 </div>
                                 
@@ -93,19 +98,15 @@
                                         <!-- individual tech detail items -->
                                         <div class="tech-item">
                                             <strong>Languages:</strong>
-                                            <p>Insert programming languages used</p>
+                                            <p>Python, SQL</p>
                                         </div>
                                         <div class="tech-item">
                                             <strong>Frameworks:</strong>
-                                            <p>Insert frameworks and libraries used</p>
+                                            <p>RADB - Relational Algebra Interpreter</p>
                                         </div>
                                         <div class="tech-item">
                                             <strong>Tools:</strong>
-                                            <p>Insert development tools and technologies</p>
-                                        </div>
-                                        <div class="tech-item">
-                                            <strong>Duration:</strong>
-                                            <p>Project timeline</p>
+                                            <p>EdStem</p>
                                         </div>
                                     </div>
                                 </div>
@@ -114,11 +115,45 @@
                                 <div class="cell project-section">
                                     <h3>Code Highlight</h3>
                                     <div class="code-snippet">
-                                        <pre><code>// Insert your code snippet here
-function exampleFunction() {
-    // Your code goes here
-    return "Hello World";
-}</code></pre>
+                                    <pre><code>
+                                        def grade():
+    output_lines, error = run_radb_query(DB_PATH, STUDENT_FILE)
+    test_cases = []
+
+    if error:
+        test_cases.append({
+            "name": "RADB execution",
+            "score": 0,
+            "max_score": 1,
+            "ok": False,
+            "feedback": f"Error running RADB: {error}",
+            "hidden": False,
+            "private": False,
+        })
+    else:
+        cleaned_output = clean_radb_output(output_lines)
+        expected_set = set(expected_output_lines)
+        actual_set = set([line.strip() for line in cleaned_output])
+
+        missing = expected_set - actual_set
+        extra = actual_set - expected_set
+
+        test_cases.append({
+            "name": "Match unordered output",
+            "score": 1 if not missing and not extra else 0,
+            "max_score": 1,
+            "ok": not missing and not extra,
+            "feedback": f"Missing: {missing}, Extra: {extra}" if missing or extra else "",
+            "hidden": False,
+            "private": False,
+        })
+
+    print(json.dumps({"testcases": test_cases}, indent=2))
+
+# run the grader
+grade()
+
+                                    </code></pre>
                                     </div>
                                 </div>
                                 
@@ -128,17 +163,17 @@ function exampleFunction() {
                                     <div class="grid-x grid-padding-x">
                                         <!-- gallery image 1 -->
                                         <div class="cell small-12 medium-4">
-                                            <img src="../images/donaldduck.png" alt="Screenshot 1" class="gallery-image">
+                                            <img src="../images/radb1.png" alt="Screenshot 1" class="gallery-image">
                                             <p class="gallery-caption">Main Interface</p>
                                         </div>
                                         <!-- gallery image 2 -->
                                         <div class="cell small-12 medium-4">
-                                            <img src="../images/donaldduck.png" alt="Screenshot 2" class="gallery-image">
+                                            <img src="../images/radb2.png" alt="Screenshot 2" class="gallery-image">
                                             <p class="gallery-caption">Feature Showcase</p>
                                         </div>
                                         <!-- gallery image 3 -->
                                         <div class="cell small-12 medium-4">
-                                            <img src="../images/donaldduck.png" alt="Screenshot 3" class="gallery-image">
+                                            <img src="../images/radb3.png" alt="Screenshot 3" class="gallery-image">
                                             <p class="gallery-caption">Results & Output</p>
                                         </div>
                                     </div>

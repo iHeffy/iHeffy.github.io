@@ -44,77 +44,29 @@
 
             <!-- main page content area -->
             <div class="off-canvas-content" data-off-canvas-content>
-                <!-- three-column layout with side padding -->
                 <div class="grid-container three-column-container">
                     <div class="grid-x grid-padding-x">
-                        <!-- left padding column - purple gradient -->
                         <div class="cell small-0 medium-1 large-2 decorative-sidebar hide-for-small-only"></div>
-                        
-                        <!-- main content area -->
                         <div class="cell small-12 medium-10 large-8">
-                            <div class="cell main-content-cell content-page">
-                                <div class="content-text">
-                                    <!-- contact info -->
-                                    <h3>Contact Information</h3>
-                                    <p><strong>Email:</strong> example@stthomas.edu</p>
-                                    <p><strong>Phone:</strong> XXX-XXX-XXXX</p>
-                                    <p><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/example</a></p>
-                                    <p><strong>GitHub:</strong> <a href="#" target="_blank">github.com/example</a></p>
-                                    <p><a href="../CISC-480-BusinessReq-GroupC.pdf" download class="resume-download"> Download Resume (PDF)</a></p>
-                                    
-                                    <!-- education Section -->
-                                    <h3>Education</h3>
-                                    <p><strong>University of St. Thomas</strong></p>
-                                    <p>Master of Science in Computer Science</p>
-                                    <p>Expected Graduation: [Date]</p>
-                                    <p>Relevant Coursework: Software Engineering, Data Structures, Algorithms, Database Systems</p>
-                                    
-                                    <!-- objective Section -->
-                                    <h3>Objective</h3>
-                                    <p>Seeking opportunities to apply computer science skills in developing innovative solutions that contribute to technological advancement and societal benefit. Passionate about software development, data analysis, and creating user-centered applications.</p>
-                                    
-                                    <!-- projects section with links to project pages -->
-                                    <h3>Projects</h3>
-                                    <p><strong>Capstone Project:</strong> <a href="./project1.html" target="_blank">Advanced Software Development Project</a></p>
-                                    <p><strong>Web Application:</strong> <a href="./project2.html" target="_blank">Interactive Web Platform</a></p>
-                                    <p><strong>Research Project:</strong> <a href="./project3.html" target="_blank">Non-CS Interdisciplinary Work</a></p>
-                                    
-                                    <!-- technical Skills Section -->
-                                    <h3>Technical Skills</h3>
-                                    <ul>
-                                        <li><strong>Programming Languages:</strong> C, Python, Java, JavaScript, C++</li>
-                                        <li><strong>Operating Systems:</strong> Unix, Linux, Windows</li>
-                                        <li><strong>Cloud Platforms:</strong> Azure, AWS, Google Cloud</li>
-                                        <li><strong>Databases:</strong> SQL, MySQL, MongoDB</li>
-                                        <li><strong>Web Technologies:</strong> HTML5, CSS, React, Node.js</li>
-                                        <li><strong>Other:</strong> Networking Technologies, Git Version Control</li>
-                                    </ul>
-                                    
-                                    <!-- languages Section -->
-                                    <h3>Languages</h3>
-                                    <ul>
-                                        <li>English (Native)</li>
-                                        <li>[Additional languages as applicable]</li>
-                                    </ul>
-                                    
-                                    <!-- work experience section -->
-                                    <h3>Work Experience</h3>
-                                    <p><strong>Software Development Intern</strong> - [Company Name] | [Dates]</p>
-                                    <p>• Developed and maintained web applications using modern frameworks</p>
-                                    <p>• Collaborated with cross-functional teams on software projects</p>
-                                    <p>• Participated in code reviews and agile development processes</p>
-                                    
-                                    <!-- leadership and community involvement section -->
-                                    <h3>Leadership and Community Involvement</h3>
-                                    <p><strong>Computer Science Club</strong> - Member | [Dates]</p>
-                                    <p>• Participated in coding competitions and hackathons</p>
-                                    <p>• Organized technical workshops for fellow students</p>
-                                    <p>• Mentored junior students in programming fundamentals</p>
-                                </div>
+                            <div class="cell main-content-cell pdf-content">
+                                <iframe
+                                    src="/files/resume2025.pdf"
+                                    title="Resume PDF"
+                                    role="document"
+                                    aria-describedby="pdf-desc"
+                                    class="project-video">
+                                    Your browser does not support inline PDFs. Use the link below to download the file.
+                                </iframe>
+                                <p id="pdf-desc" style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
+                                    Embedded PDF of resume. Use the download link if embedding is not supported.
+                                </p>
+                                <p style="margin-top: 1rem;">
+                                    <a href="/files/resume2025.pdf" download="resume.pdf" rel="noopener noreferrer" style="color: #6a0dad; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid #9370db; border-radius: 0.25rem; display: inline-block; background-color: rgba(147, 112, 219, 0.1);">
+                                        Download Resume (PDF)
+                                    </a>
+                                </p>
                             </div>
                         </div>
-                        
-                        <!-- right padding column - purple gradient -->
                         <div class="cell small-0 medium-1 large-2 decorative-sidebar hide-for-small-only"></div>
                     </div>
                 </div>
@@ -132,38 +84,68 @@
     </body>
 
     <!-- 
-    ===== ALTERNATIVE PDF OPTION =====
-    displays a PDF instead of html version of resume
-    
-    replace the entire 
-        <div class="off-canvas-content" data-off-canvas-content> section above with the code above
-    if your PDF file in the pages/ folder isnt "resume.pdf" update the src pathing
+    ===== ORIGINAL HTML RESUME LAYOUT (NOW COMMENTED OUT) =====
+    This was the original HTML version of the resume that has been replaced with the PDF iframe above.
     
     <div class="off-canvas-content" data-off-canvas-content>
         <div class="grid-container three-column-container">
             <div class="grid-x grid-padding-x">
-                <div class="cell small-0 medium-1 large-2 decorative-sidebar"></div>
+                <div class="cell small-0 medium-1 large-2 decorative-sidebar hide-for-small-only"></div>
                 <div class="cell small-12 medium-10 large-8">
-                    <div class="cell main-content-cell pdf-content">
-                        <iframe
-                            src="resume.pdf"
-                            title="Resume PDF"
-                            role="document"
-                            aria-describedby="pdf-desc"
-                            style="width: 100%; height: calc(100vh - 8rem); border: 1px solid #64faff; border-radius: 0.375rem;">
-                            Your browser does not support inline PDFs. Use the link below to download the file.
-                        </iframe>
-                        <p id="pdf-desc" style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
-                            Embedded PDF of resume. Use the download link if embedding is not supported.
-                        </p>
-                        <p style="margin-top: 1rem;">
-                            <a href="resume.pdf" download="resume.pdf" rel="noopener noreferrer" style="color: #64faff; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid #64faff; border-radius: 0.25rem; display: inline-block;">
-                                Download Resume (PDF)
-                            </a>
-                        </p>
+                    <div class="cell main-content-cell content-page">
+                        <div class="content-text">
+                            <h3>Contact Information</h3>
+                            <p><strong>Email:</strong> example@stthomas.edu</p>
+                            <p><strong>Phone:</strong> XXX-XXX-XXXX</p>
+                            <p><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/example</a></p>
+                            <p><strong>GitHub:</strong> <a href="#" target="_blank">github.com/example</a></p>
+                            <p><a href="/files/resume2025.pdf" download class="resume-download"> Download Resume (PDF)</a></p>
+                            
+                            <h3>Education</h3>
+                            <p><strong>University of St. Thomas</strong></p>
+                            <p>Master of Science in Computer Science</p>
+                            <p>Expected Graduation: [Date]</p>
+                            <p>Relevant Coursework: Software Engineering, Data Structures, Algorithms, Database Systems</p>
+                            
+                            <h3>Objective</h3>
+                            <p>Seeking opportunities to apply computer science skills in developing innovative solutions that contribute to technological advancement and societal benefit. Passionate about software development, data analysis, and creating user-centered applications.</p>
+                            
+                            <h3>Projects</h3>
+                            <p><strong>Capstone Project:</strong> <a href="./project1.html" target="_blank">Advanced Software Development Project</a></p>
+                            <p><strong>Web Application:</strong> <a href="./project2.html" target="_blank">Interactive Web Platform</a></p>
+                            <p><strong>Research Project:</strong> <a href="./project3.html" target="_blank">Non-CS Interdisciplinary Work</a></p>
+                            
+                            <h3>Technical Skills</h3>
+                            <ul>
+                                <li><strong>Programming Languages:</strong> C, Python, Java, JavaScript, C++</li>
+                                <li><strong>Operating Systems:</strong> Unix, Linux, Windows</li>
+                                <li><strong>Cloud Platforms:</strong> Azure, AWS, Google Cloud</li>
+                                <li><strong>Databases:</strong> SQL, MySQL, MongoDB</li>
+                                <li><strong>Web Technologies:</strong> HTML5, CSS, React, Node.js</li>
+                                <li><strong>Other:</strong> Networking Technologies, Git Version Control</li>
+                            </ul>
+                            
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>English (Native)</li>
+                                <li>[Additional languages as applicable]</li>
+                            </ul>
+                            
+                            <h3>Work Experience</h3>
+                            <p><strong>Software Development Intern</strong> - [Company Name] | [Dates]</p>
+                            <p>• Developed and maintained web applications using modern frameworks</p>
+                            <p>• Collaborated with cross-functional teams on software projects</p>
+                            <p>• Participated in code reviews and agile development processes</p>
+                            
+                            <h3>Leadership and Community Involvement</h3>
+                            <p><strong>Computer Science Club</strong> - Member | [Dates]</p>
+                            <p>• Participated in coding competitions and hackathons</p>
+                            <p>• Organized technical workshops for fellow students</p>
+                            <p>• Mentored junior students in programming fundamentals</p>
+                        </div>
                     </div>
                 </div>
-                <div class="cell small-0 medium-1 large-2 decorative-sidebar"></div>
+                <div class="cell small-0 medium-1 large-2 decorative-sidebar hide-for-small-only"></div>
             </div>
         </div>
     </div>
