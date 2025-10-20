@@ -198,15 +198,13 @@ CSS styling for three-column layout
 
 /* side padding columns - decorative margins */
 .decorative-sidebar {
-    background: linear-gradient(135deg, #e6d7ff 0%, #9370db 50%, #4b0082 100%);
-    min-height: 100vh;
+    background: linear-gradient(135deg, #e6d7ff 0%, #9370db 50%, #4b0082 100%); /* gives purple gradient */
     padding: 0;
 }
 
 /* main content area */
 .three-column-container .cell.small-12.medium-10.large-8 {
     background-color: #ffffff;
-    min-height: 100vh;
     padding: 1.5rem;
     border-left: 2px solid #9370db;
     border-right: 2px solid #9370db;
