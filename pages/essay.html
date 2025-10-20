@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- meta tags for character encoding and responsive viewport -->
+        <meta charset = "utf-8"/>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1"/>
+
+        <!-- CSS stylesheets - foundation framework and custom styles -->
+        <link rel="stylesheet" href="../css/foundation.css">
+        <link rel="stylesheet" href="../css/style.css"/>
+
+        <!-- page title displayed in browser tab -->
+        <title>Essay</title>
+</head>
+
+<body> 
+        <!-- foundation off-canvas navigation wrapper -->
+        <div class="off-canvas-wrapper">
+            <!-- left-side sliding navigation -->
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+                <!-- close button for navigation -->
+                <button class="close-button" aria-label="Close menu" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <!-- vertical navigation -->
+                <ul class="vertical menu select-page-font">
+                    <li><a href="../index.html">Home Page</a></li>
+                    <li><a href="./project1.html">Project 1</a></li>
+                    <li><a href="./project2.html">Project 2</a></li>
+                    <li><a href="./project3.html">Project 3</a></li>
+                    <li><a href="./resume.html">Resume</a></li>
+                    <li><a href="./essay.html">Essay</a></li>
+                </ul>
+
+            </div>
+
+            <!-- button to open navigation -->
+            <div class="grid-x grid-padding-x">
+                <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Navigation</button>
+            </div>
+
+            <!-- main page content area -->
+            <div class="off-canvas-content" data-off-canvas-content>
+                <!-- three-column layout with side padding -->
+                <div class="grid-container three-column-container">
+                    <div class="grid-x grid-padding-x">
+                        <!-- left padding column - purple gradient -->
+                        <div class="cell small-0 medium-1 large-2 decorative-sidebar hide-for-small-only"></div>
+                        
+                        <!-- main content area -->
+                        <div class="cell small-12 medium-10 large-8">
+                            <div class="cell main-content-cell content-page">
+                                <div class="content-text">
+                                    <!-- essay and title -->
+                                    <h3>Common Good Essay</h3>
+                                    <p>This essay demonstrates how the work included in my e-portfolio connects to problems of interest to me and to the common good, as well as how it aligns with St. Thomas mission and values.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- right padding column - purple gradient -->
+                        <div class="cell small-0 medium-1 large-2 decorative-sidebar hide-for-small-only"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   <!-- javaScript libraries and Foundation initialization -->
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/what-input.js"></script>
+    <script src="../js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+
+    </body>
+
+    <!-- 
+    ===== ALTERNATIVE PDF OPTION =====
+    displays a PDF instead of html version of essay
+    
+        replace the entire 
+                <div class="off-canvas-content" data-off-canvas-content> 
+        section above with the code above
+        if your PDF file in the pages/ folder isnt "essay.pdf" update the src pathing
+    
+    <div class="off-canvas-content" data-off-canvas-content>
+        <div class="grid-container three-column-container">
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-0 medium-1 large-2 decorative-sidebar"></div>
+                <div class="cell small-12 medium-10 large-8">
+                    <div class="cell main-content-cell pdf-content">
+                        <iframe
+                            src="essay.pdf"
+                            title="Essay PDF"
+                            role="document"
+                            aria-describedby="pdf-desc"
+                            style="width: 100%; height: calc(100vh - 8rem); border: 1px solid #64faff; border-radius: 0.375rem;">
+                            Your browser does not support inline PDFs. Use the link below to download the file.
+                        </iframe>
+                        <p id="pdf-desc" style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
+                            Embedded PDF of essay. Use the download link if embedding is not supported.
+                        </p>
+                        <p style="margin-top: 1rem;">
+                            <a href="essay.pdf" download="essay.pdf" rel="noopener noreferrer" style="color: #64faff; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid #64faff; border-radius: 0.25rem; display: inline-block;">
+                                Download Essay (PDF)
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="cell small-0 medium-1 large-2 decorative-sidebar"></div>
+            </div>
+        </div>
+    </div>
+    -->
+
+</html>

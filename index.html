@@ -1,99 +1,142 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+
+<head>
+        <!-- meta tags for character encoding and responsive viewport -->
         <meta charset = "utf-8"/>
         <meta name = "viewport" content = "width = device-width, initial-scale = 1"/>
 
-        <link rel="stylesheet" href="css/foundation.css">
-        <link rel = "stylesheet" href = "css/style.css"/>
+        <!-- CSS stylesheets and foundation framework and custom styles -->
+        <link rel="stylesheet" href="./css/foundation.css">
+        <link rel="stylesheet" href="./css/style.css"/>
 
-        <title>Hunter Heffernan's Website</title>
-    </head>
+        <!-- page title displayed in browser tab -->
+        <title>Example's Website</title>
+</head>
 
-    <body> 
+<body> 
+    <!-- off-canvas navigation wrapper -->
+    <div class="off-canvas-wrapper">
+        <!-- left sliding navigation -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
 
-        <div class="off-canvas-wrapper">
-            <!-- Your menu or Off-canvas content goes here -->
-            <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+            <!-- close button for navigation -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
 
-                <!-- Close button -->
-                <button class="close-button" aria-label="Close menu" type="button" data-close>
-                    <span aria-hidden="true">&times;</span>
-                </button>
+            <!-- vertical navigation -->
+            <ul class="vertical menu select-page-font">
+                <li><a href="./index.html">Home Page</a></li>
+                <li><a href="./pages/project1.html">Project 1</a></li>
+                <li><a href="./pages/project2.html">Project 2</a></li>
+                <li><a href="./pages/project3.html">Project 3</a></li>
+                <li><a href="./pages/resume.html">Resume</a></li>
+                <li><a href="./pages/essay.html">Essay</a></li>
+            </ul>
 
-                <!-- Menu -->
-                <ul class="vertical menu select-page-font">
-                    <li><a href="#">Home Page</a></li>
-                    <li><a href="pages/projects.html">Projects</a></li>
-                    <li><a href="pages/resume.html">Resume</a></li>
-                    <li><a href="pages/fun.html">Fun</a></li>
-                </ul>
+        </div>
 
-            </div>
+        <!-- button to open navigation -->
+        <div class="grid-x grid-padding-x">
+            <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Navigation</button>
+        </div>
 
-            <div class="grid-x grid-padding-x">
-                <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Navigation</button>
-            </div>
-
-            <!-- Your page content lives here -->
-            <div class="off-canvas-content" data-off-canvas-content>
-                
-
-                <!-- main content within a `grid-container` -->
-                <div class="grid-container">   
-         
-
-                    <!-- `grid-x` represents a row -->
-                    <div class="grid-x grid-padding-x">
-                        
-                        <div class="cell small-12 large-8">
-
-                            <div class="grid-y" style="height: 100%;">
-                                <div class="cell">
-                                    <h2>About Me</h2>
+        <!-- main page content area -->
+        <div class="off-canvas-content" data-off-canvas-content>
+            <!-- three-column layout container with side margins -->
+            <div class="grid-container three-column-container">
+                <div class="grid-x grid-padding-x">
+                    
+                    <!-- left decorative padding column - purple gradient background -->
+                    <div class="cell small-0 medium-1 large-2 decorative-sidebar hide-for-small-only"></div>
+                    
+                    <!-- main content area - white background with purple borders -->
+                    <div class="cell small-12 medium-10 large-8">
+                        <!-- two-column grid for personal info and projects -->
+                        <div class="grid-x grid-padding-x">
+                                    
+                                    <!-- left Column - personal info -->
+                                    <div class="cell small-12 medium-6 main-content-cell">
+                                        <div class="content-section">
+                                            <!-- personal video container -->
+                                            <div class="profile-image-container">
+                                                <img src="./images/donaldduck.png" alt="Profile Picture" class="profile-image">
+                                            </div>
+                                            
+                                            <!-- contact information section -->
+                                            <h4>Contact</h4>
+                                            <p>Email: example@stthomas.edu</p>
+                                            <p>Mobile: XXX-XXX-XXX</p>
+                                            
+                                            <!-- technical skills list -->
+                                            <h4>IT Skills</h4>
+                                            <ul>
+                                                <li>C, Python, Java, Javascript, C++</li>
+                                                <li>Unix, Linux, Windows</li>
+                                                <li>Azure, AWS, Google Cloud</li>
+                                                <li>SQL, MySQL, MongoDB</li>
+                                                <li>Networking Technologies</li>
+                                                <li>HTML 5, CSS</li>
+                                            </ul>
+                                            
+                                            <!-- educational qualifications -->
+                                            <h4>Qualifications</h4>
+                                            <ul>
+                                                <li>MS Computer Science</li>
+                                                <li>MS Mechanical Engineering</li>
+                                            </ul>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- right column - projects and portfolio links -->
+                                    <div class="cell small-12 medium-6 main-content-cell">
+                                        <div class="content-section">
+                                            <!-- project 1 showcase -->
+                                            <h4>Computer Science Project 1 - Year</h4>
+                                            <p><a href="./pages/project1.html" target="_blank">Link to project</a></p>
+                                            <p>Brief description of the project and its significance</p>
+                                            
+                                            <!-- project 2 showcase -->
+                                            <h4>Computer Science Project 2 - Year</h4>
+                                            <p><a href="./pages/project2.html" target="_blank">Link to project</a></p>
+                                            <p>Brief description of the project and its significance</p>
+                                            
+                                            <!-- project 3 showcase -->
+                                            <h4>Other Project - Year</h4>
+                                            <p><a href="./pages/project3.html" target="_blank">Link to project</a></p>
+                                            <p>Brief description of the project and its significance</p>
+                                            
+                                            <!-- essay link -->
+                                            <h4>Essay</h4>
+                                            <p><a href="./pages/essay.html" target="_blank">Link to essay</a></p>
+                                            
+                                            
+                                            <!-- resume link -->
+                                            <h4>Resume</h4>
+                                            <p><a href="./pages/resume.html" target="_blank">Link to Resume</a></p>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
-
-                                <div class="cell">
-                                    <p class="index-p-style">
-                                        Hi, I'm Hunter Heffernan, I am from Roseville, Minnesota, and this Spring I will have finished my undergraduate at 
-                                        the University of <a href="https://www.stthomas.edu/" target="_blank">St. Thomas</a> with a B.S. in 
-                                        <a href="https://cas.stthomas.edu/departments/areas-of-study/computer-data-sciences/" target="_blank">Computer Science</a>
-                                         and minors in <a href="https://cas.stthomas.edu/departments/areas-of-study/art-history/" target="_blank">Art History</a> 
-                                         and <a href="https://cas.stthomas.edu/departments/areas-of-study/computer-data-sciences/" target="_blank">Data Science</a>.
-
-                                        <br>
-                                        <br>
-
-                                        After graduation, I plan to pursue a career in software development, specializing in full-stack development.
-                                        
-                                        <br>
-                                        <br>
-                                        
-                                        When I'm not coding, I enjoy spending time outside. Over my time spent at University, I have gotten into hiking, camping, and fishing. 
-                                        This summer I got to experience all three when I went on a camping trip staying at Lake Itasca State Park as well as Voyagers National Park near Kabetogama.
-                                        If I'm not outside or coding, odds are I'm spending time with my family and my two cats.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cell small-12 large-4" style="background-color: #B2C89C;">
-                            <img class="index-image-padding" src="images/headshot.jpeg" alt="headshot image" class="index-image">
-                        </div>
                     </div>
-                
+                    
+                    <!-- right decorative padding column - purple gradient background -->
+                    <div class="cell small-0 medium-1 large-2 decorative-sidebar hide-for-small-only"></div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- include before closing <body> tag -->
-        <script src="js/vendor/jquery.js"></script>
-        <script src="js/vendor/what-input.js"></script>
-        <script src="js/vendor/foundation.js"></script>
-        <script type="application/javascript">
-            $(document).foundation();
-        </script>
+    <!-- javaScript files - foundation framework dependencies -->
+    <script src="./js/vendor/jquery.js"></script>
+    <script src="./js/vendor/what-input.js"></script>
+    <script src="./js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
 
+</body>
 
-    </body>
 </html>

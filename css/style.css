@@ -1,11 +1,20 @@
-html {
-    font-size: 120%
-}
+/*
+========================================================================================================================
+CSS styling for all html pages
+======================================================================================================================== 
+*/
 
+/* global body styling with light purple background */
 body {
-    background-color: #e9f6d8;
+    background-color: #e6d7ff;
 }
 
+/* global font */
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* global paragraph styling */
 p {
     color: black; 
     width: 75%;
@@ -13,6 +22,7 @@ p {
     font-size: 0.8rem;
 }
 
+/* main heading styling - large, bold, centered */
 h1 {
     font-size: 3rem;
     font-family: Georgia, 'Times New Roman', Times, sans-serif;
@@ -20,159 +30,337 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    text-decoration: overline;
-    font-size: 2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style: italic;
-    font-weight: lighter;
-    color: #5b813c;
-    opacity: 0.7;
-    margin-top: 2rem;
-    margin-left: 2rem;
-}
 
+/* subheading styling with purple color */
 h3 {
-    color: #4A2C2A;
+    color: #4b0082;
     margin-bottom: 0.5rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-img {
-    margin: 0 auto;
-    display: block;
+/* list styling, in nav menu for instance */
+li {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
 }
 
+/* profile image styling for index page */
+.profile-image-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.profile-image {
+    max-width: 150px;
+    border-radius: 0.5rem;
+}
+
+/* link styling with hover effects */
 a {
-    color: seagreen;
+    color: rgb(44, 0, 80);
 }
 
 a:visited {
-    color: #c39924; 
+    color: #02005c; 
 }
 
 a:hover {
-    color: #A4C08D;
+    color: #740aff;
 }
 
+/* button styling with purple theme and hover effects */
 .button {
-    background-color: #5b813c;
+    background-color: #6a0dad;
     color: white;
+    border: 2px solid #9370db;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0.25rem 0.5rem rgba(106, 13, 173, 0.3);
 }
 
 .button:hover {
-    background-color: rgb(20, 124, 124);
+    background-color: #8b5fbf;
+    border-color: #8b5fbf;
+    box-shadow: 0 0.5rem 1rem rgba(106, 13, 173, 0.4);
+    transform: translateY(-2px); /* gives the raise effect */
 }
 
-/* index page specific styling */
-.index-image-padding {
-    padding: 1rem;
-    border-radius: 3em;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+/*
+========================================================================================================================
+CSS styling for essay and resume pages
+======================================================================================================================== 
+*/
+
+/* content formatting */
+.content-page {
+    padding: 3rem;
+    min-height: calc(100vh - 6rem);
+    margin: 1rem 0;
 }
 
-.index-image {
+.content-text {
+    max-width: none;
     width: 100%;
-    height: 400px;
+    line-height: 1.6;
 }
 
-.index-p-style {
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
+.content-text h3 {
+    color: #4b0082;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #9370db;
+    padding-bottom: 0.5rem;
 }
 
-/* resume page specific styling */
-.resume-container {
-    margin-right: 2rem;
-    margin-left: 2rem;
-    padding: 2rem 0;
+.content-text h3:first-child {
+    margin-top: 0;
 }
 
-.resume-align-right{
-    text-align: right;
-}
-
-.resume-section {
-    background-color: #a0d0a3;
+.content-text p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.7;
     margin-bottom: 1.5rem;
+    text-align: justify;
+    width: 100%;
 }
 
-.resume-section h4 {
-    color: #182a00;
-    margin-bottom: 0.5rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.resume-section ul {
+.content-text p:last-child {
     margin-bottom: 0;
 }
 
-.resume-section li {
+.content-text ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.content-text li {
+    color: #333;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* resume-specific styles */
+.resume-download {
+    color: #9370db;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #9370db;
+    border-radius: 0.25rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.resume-download:hover {
+    background-color: rgba(147, 112, 219, 0.1);
+    color: #4b0082;
+}
+
+/* PDF content styling */
+.pdf-content {
+    padding: 1rem;
+    min-height: calc(100vh - 4rem);
+    margin: 1rem 0;
+}
+
+.pdf-content iframe {
+    background-color: #ffffff;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 17, 79, 0.1);
+}
+
+.pdf-content a {
+    transition: all 0.2s ease;
+}
+
+.pdf-content a:hover {
+    background-color: rgba(147, 112, 219, 0.1);
+    color: #4b0082;
+}
+
+/*
+========================================================================================================================
+CSS styling for three-column layout
+======================================================================================================================== 
+*/
+
+/* main container */
+.three-column-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* side padding columns - decorative margins */
+.decorative-sidebar {
+    background: linear-gradient(135deg, #e6d7ff 0%, #9370db 50%, #4b0082 100%);
+    min-height: 100vh;
+    padding: 0;
+}
+
+/* main content area */
+.three-column-container .cell.small-12.medium-10.large-8 {
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 1.5rem;
+    border-left: 2px solid #9370db;
+    border-right: 2px solid #9370db;
+}
+
+/* content cells */
+.main-content-cell {
+    background-color: #ffffff;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #9370db;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content-cell h3,
+.main-content-cell h4 {
+    color: #4b0082;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #9370db;
+    padding-bottom: 0.25rem;
+}
+
+/* content section */
+.content-section {
+    background-color: #f3e8ff;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    border-left: 3px solid #9370db;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-section p {
+    margin-bottom: 0.5rem;
+    color: #4b0082;
+}
+
+.content-section ul {
+    margin-bottom: 0;
+    padding-left: 1.25rem;
+}
+
+.content-section li {
+    color: #6a0dad;
     margin-bottom: 0.25rem;
 }
 
-/* projects page specific styling */
-.project-card {
-    background-color: #a0d0a3;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
+/*
+========================================================================================================================
+CSS styling for project showcase
+======================================================================================================================== 
+*/
+
+/* main content area */
+.project-showcase-container {
+    max-width: 100%;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.375rem;
+}
+
+/* sections of the webpage */
+.project-section {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid #9370db;
     width: 100%;
-    height: 400px;
+}
+
+.project-section h3 {
+    color: #4b0082;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #9370db;
+    padding-bottom: 0.5rem;
+}
+
+/* media container */
+.media-container {
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+.project-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* technical details */
+.tech-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.tech-item {
+    padding: 0.8rem;
+    background: rgba(147, 112, 219, 0.05);
     border-radius: 0.25rem;
-    margin-bottom: 1rem;
+    border-left: 2px solid #9370db;
 }
 
-.project-card h3 {
-    color: #182a00;
-    margin-bottom: 1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.tech-item p {
+    margin: 0;
 }
 
-.project-card p {
-    margin-bottom: 0.75rem;
-}
-
-/* fun page gallery styling */
-.gallery-row {
-    margin-bottom: 2rem;
-}
-
-.gallery-item {
-    background-color: #a0d0a3;
+/* code snippet section */
+.code-snippet {
+    color: #4b0082;
     padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center;
-    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    overflow-x: auto; /* allows the code to scroll horizontally if input is too long*/
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    border: 1px solid #9370db;
+    margin: 0;
 }
 
+/* project gallery */
 .gallery-image {
     width: 100%;
-    height: 400px;
+    height: 10rem;
     object-fit: cover;
-    border-radius: 0.25rem;
-    margin-bottom: 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid #9370db;
 }
 
-.gallery-description {
-    color: #182a00;
-    font-size: 0.9rem;
-    margin-bottom: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.gallery-caption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
 }
 
-/* navigation menu styling */
-.select-page-font li{
-    margin-top: 1.75rem;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+/* hover effect for each section */
+.project-section:hover {
+    box-shadow: 0 0.25rem 0.5rem rgba(75, 0, 130, 0.15);
+    transition: box-shadow 0.2s ease;
 }
-
-
