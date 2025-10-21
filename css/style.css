@@ -39,7 +39,7 @@ h3 {
 }
 
 /* list styling, in nav menu for instance */
-li {
+li a{
     margin-top: 1.5rem;
     margin-left: 2rem;
 }
