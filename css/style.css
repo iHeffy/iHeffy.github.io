@@ -99,7 +99,7 @@ CSS styling for essay and resume pages
 /* content formatting */
 .content-page {
     padding: 3rem;
-    min-height: calc(100vh - 6rem);
+    min-height: 80vh; /* More flexible than calc */
     margin: 1rem 0;
 }
 
@@ -131,8 +131,8 @@ CSS styling for essay and resume pages
     width: 100%;
 }
 
-.content-text p:last-child {
-    margin-bottom: 0;
+.essay-text {
+    text-indent: 2rem;
 }
 
 .content-text ul {
@@ -166,17 +166,14 @@ CSS styling for essay and resume pages
 /* PDF content styling */
 .pdf-content {
     padding: 1rem;
-    min-height: calc(100vh - 4rem);
+    min-height: 80vh; 
     margin: 1rem 0;
 }
 
 .pdf-content iframe {
-    background-color: #ffffff;
-    box-shadow: 0 0.125rem 0.5rem rgba(0, 17, 79, 0.1);
-}
-
-.pdf-content a {
-    transition: all 0.2s ease;
+    height: 56rem; 
+    border: 2px solid #9370db;
+    border-radius: 0.5rem;
 }
 
 .pdf-content a:hover {
