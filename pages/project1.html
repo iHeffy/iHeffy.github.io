@@ -116,39 +116,39 @@
                             <div class="cell project-section">
                                 <h3>Code Highlight</h3>
                                 <div class="code-snippet">
-                                    <pre><code>class GolfGame:
-                                        """
-                                        main game logic and state management for game
-                                        """
-                                        def __init__(self, player_names, game_mode="pvp", ai_difficulty=None):
-                                            self.players = []
-                                            self.game_mode = game_mode
-                                            self.ai_difficulty = ai_difficulty
+<pre><code>
+class GolfGame:
+"""
+main game logic and state management for game
+"""
+def __init__(self, player_names, game_mode="pvp", ai_difficulty=None):
+    self.players = []
+    self.game_mode = game_mode
+    self.ai_difficulty = ai_difficulty
                                     
-                                            # create players based on game mode
-                                            if game_mode == "pvp":
-                                                for name in player_names:
-                                                    self.players.append(Player(name))
-                                            else:
-                                                self.players.append(Player(player_names[0]))
-                                                self.players.append(AIPlayer("AI", ai_difficulty))
+    # create players based on game mode
+    if game_mode == "pvp":
+        for name in player_names:
+            self.players.append(Player(name))
+    else:
+        self.players.append(Player(player_names[0]))
+        self.players.append(AIPlayer("AI", ai_difficulty))
                                     
-                                            self.deck = Deck()
-                                            self.discard_pile = []
-                                        
-                                        def setup_game(self):
-                                            """
-                                            set up a new game (reset deck, discard, and player grids)
-                                            """
-                                            self.deck = Deck()
-                                            self.discard_pile = []
-                                            for player in self.players:
-                                                player.initialize_grid(self.deck)
-                                                player.seen_cards.clear()
-                                            first_card = self.deck.deal()
-                                            if first_card:
-                                                self.discard_pile.append(first_card)
-                                    
+    self.deck = Deck()
+    self.discard_pile = []
+
+"""
+set up a new game (reset deck, discard, and player grids)
+"""
+def setup_game(self):
+    self.deck = Deck()
+    self.discard_pile = []
+    for player in self.players:
+        player.initialize_grid(self.deck)
+        player.seen_cards.clear()
+    first_card = self.deck.deal()
+    if first_card:
+        self.discard_pile.append(first_card)                           
 </code></pre>
                                 </div>
                             </div>
